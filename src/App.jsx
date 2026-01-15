@@ -9,6 +9,7 @@ import { BookingsPage } from './pages/admin/BookingsPage';
 import { ReportsPage } from './pages/admin/ReportsPage';
 import { AffiliatesPage } from './pages/admin/AffiliatesPage';
 import { BrandsPage } from './pages/admin/BrandsPage';
+import { CommissionRulesPage } from './pages/admin/CommissionRulesPage';
 import { AffiliateDashboard } from './pages/affiliate/AffiliateDashboard';
 import { AffiliateLinksPage } from './pages/affiliate/AffiliateLinksPage';
 import { AffiliateSettingsPage } from './pages/affiliate/AffiliateSettingsPage';
@@ -39,6 +40,7 @@ function App() {
             <Route path="/admin/reports" element={<ReportsPage />} />
             <Route path="/admin/affiliates" element={<AffiliatesPage />} />
             <Route path="/admin/brands" element={<BrandsPage />} />
+            <Route path="/admin/commission-rules" element={<CommissionRulesPage />} />
             {/* Add other admin routes here */}
           </Route>
         </Route>

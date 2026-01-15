@@ -10,7 +10,8 @@ import {
     UserCheck,
     CalendarCheck,
     LogOut,
-    Wallet
+    Wallet,
+    ShieldCheck
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
@@ -23,6 +24,7 @@ export const Sidebar = () => {
             case 'PLATFORM_ADMIN':
                 return [
                     { icon: LayoutDashboard, label: 'Dashboard', path: '/admin', end: true },
+                    { icon: ShieldCheck, label: 'Quy tắc hoa hồng', path: '/admin/commission-rules' },
                     { icon: Users, label: 'Thương hiệu', path: '/admin/brands' },
                     { icon: Settings, label: 'Cấu hình', path: '/admin/settings' },
                 ];
